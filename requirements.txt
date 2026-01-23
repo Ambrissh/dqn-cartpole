@@ -1,6 +1,6 @@
-torch 
+torch
 numpy
-gymnasium 
+gymnasium
 matplotlib
 
 
