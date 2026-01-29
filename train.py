@@ -39,7 +39,7 @@ def select_action(state):
 
 episode_durations=[]
 
-def plot_durations(show_result=False): 
+def plot_durations(show_result=False):
   plt.figure(1)
   durations_t=torch.tensor(episode_durations , dtype=torch.long)
   if show_result:
@@ -51,19 +51,19 @@ def plot_durations(show_result=False):
     plt.ylabel("Duration")
     plt.plot(durations_t.numpy())
 
-    #taking the average of the last 100 episodes 
-    if len(durations_t)>=100: 
+    #taking the average of the last 100 episodes
+    if len(durations_t)>=100:
       means=durations_t.unfold(0,100,1).mean(1).view(-1)
       means=torch.cat((torch.zeros(99),means))
       plt.plot(means.numpy())
 
     plt.pause(0.001)
-    if is_ipython: 
+    if is_ipython:
       if not show_result:
         display.display(plt.gcf())
         display.clear_output(wait=True)
       else:
-        display.display(plt.gcf())  
+        display.display(plt.gcf())
 
 
 
