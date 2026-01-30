@@ -1,4 +1,5 @@
 import gymnasium as gym
+import matplotlib.pyplot as plt 
 
 batch_size=128 #batch size for the transitions
 gamma=0.99 # discount factor
@@ -64,15 +65,3 @@ def plot_durations(show_result=False):
         display.clear_output(wait=True)
       else:
         display.display(plt.gcf())
-
-
-
-
-
-
-
-
-
-
-
-
