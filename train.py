@@ -28,7 +28,7 @@ steps_done=0
 def select_action(state):
   global steps_done
   sample=random.random()
-  eps_threshold=eps_end+(eps_end-eps_start) * \
+  eps_threshold=eps_end+(eps_start-eps_end) * \
   math.exp(-1*steps_done/eps_decay)
   steps_done+=1
   if sample>eps_threshold: #just the epsilon greedy criterion , in this case if we explore with probability epsilon and exploit with probability 1-episilon
