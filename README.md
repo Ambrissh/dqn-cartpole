@@ -185,7 +185,7 @@ MIT License
 
 ##  Author
 
-Your Name - [GitHub](https://github.com/Ambrissh)
+Ambrissh - [GitHub](https://github.com/Ambrissh)
 
 ---
 
